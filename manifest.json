@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Double Click To Define",
+    "version": "1.0",
+    "description": "Displays the definition of a word when you double-click it.",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
